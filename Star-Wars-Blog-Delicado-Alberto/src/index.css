@@ -1,0 +1,42 @@
+/* Estilo General */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Loader */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.planet-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Star_Wars_Logo.svg/1024px-Star_Wars_Logo.svg.png") 
+        no-repeat center/cover;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Favoritos */
+.btn-favorite {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-favorite.active {
+    color: black;
+    transform: scale(1.2);
+}
